@@ -1,0 +1,23 @@
+{
+  "name": "phatak",
+  "version": "1.0.0",
+  "description": "Restyling of the UMBC CMPE 212 course website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GarntS/phatak.git"
+  },
+  "author": "Garnt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GarntS/phatak/issues"
+  },
+  "homepage": "https://github.com/GarntS/phatak#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

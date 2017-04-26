@@ -1,0 +1,185 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #eef; }
+
+/* Page Title */
+.topTitle {
+  margin-bottom: 2em; }
+
+.littleTitle {
+  background-color: #eee; }
+  .littleTitle h3 {
+    color: #000; }
+
+/* Main Page Tabs */
+.tabs ul {
+  margin-bottom: 7px; }
+  .tabs ul li {
+    list-style: none;
+    display: inline;
+    background-color: #fff;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid transparent;
+    margin: 0px .25em;
+    cursor: pointer; }
+  .tabs ul li.active {
+    background-color: #ddf; }
+
+/* Page Contents */
+.container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 100%;
+  height: 40em;
+  overflow-y: hidden; }
+  .container > div {
+    visibility: hidden;
+    height: 0px; }
+  .container .syllabusWrapper {
+    margin-top: 1em;
+    height: 95%;
+    overflow-y: scroll;
+    overflow-x: hidden; }
+    .container .syllabusWrapper .instructor {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0; }
+      .container .syllabusWrapper .instructor .name {
+        font-size: 1.2em;
+        font-weight: bolder; }
+      .container .syllabusWrapper .instructor li {
+        display: list-item; }
+      .container .syllabusWrapper .instructor .instlabel {
+        display: inline;
+        font-size: 1.1em;
+        font-weight: bold;
+        margin: 0;
+        padding: 0; }
+    .container .syllabusWrapper .tas {
+      width: 50%;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      display: inline-flex;
+      justify-content: center;
+      margin-left: 25%;
+      padding-left: 0; }
+      .container .syllabusWrapper .tas li {
+        list-style: none; }
+      .container .syllabusWrapper .tas li:last-child {
+        margin-left: 5em; }
+      .container .syllabusWrapper .tas .name {
+        font-size: 1.1em;
+        font-weight: bold; }
+      .container .syllabusWrapper .tas .hours {
+        margin-bottom: 1em; }
+    .container .syllabusWrapper .book {
+      list-style: none;
+      margin-bottom: 1em; }
+      .container .syllabusWrapper .book .title {
+        font-size: 1.1em;
+        font-weight: bold; }
+      .container .syllabusWrapper .book .author {
+        font-size: 1em;
+        font-weight: light; }
+    .container .syllabusWrapper .desc {
+      font-size: 1em;
+      font-weight: lighter;
+      font-style: italic; }
+    .container .syllabusWrapper ul ul {
+      list-style-type: none; }
+    .container .syllabusWrapper > * {
+      margin-bottom: 1em; }
+    .container .syllabusWrapper .syl-head {
+      list-style: none;
+      font-size: 1.5em; }
+      .container .syllabusWrapper .syl-head .main {
+        font-weight: bold;
+        font-size: 2em; }
+    .container .syllabusWrapper .syl-subhead {
+      font-size: 1.5em;
+      margin-top: 1.75em; }
+    .container .syllabusWrapper a {
+      font-weight: bold; }
+  .container .notes {
+    height: 95%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 1.5em; }
+    .container .notes .note-item {
+      display: list-item;
+      list-style: none;
+      padding-bottom: .25em; }
+    .container .notes .note-item:nth-child(n+2) {
+      border-top: 1px solid #ddd;
+      padding-top: 0.5em; }
+    .container .notes > .note-item > a:first-child {
+      float: right;
+      margin-right: 1.25em; }
+    .container .notes > .note-item > .links {
+      float: right;
+      margin-right: 1.25em; }
+    .container .notes > .note-item > .links i {
+      padding-left: 0.5em; }
+    .container .notes > .note-item * {
+      display: inline; }
+  .container .sorry {
+    height: 10%;
+    width: 80%;
+    left: 10%;
+    top: 45%;
+    position: absolute; }
+    .container .sorry .oops {
+      margin-top: 0; }
+  .container .item {
+    display: list-item;
+    font-size: 1.25em;
+    list-style-type: none;
+    margin-top: 1em; }
+    .container .item > * {
+      display: inline; }
+    .container .item > i {
+      margin-right: 1em; }
+  .container > div.active {
+    visibility: visible;
+    width: 100%;
+    height: 100%; }
+
+/* Top Navbar */
+.topBar {
+  background-color: #4062bb;
+  width: 100%;
+  height: 4em;
+  margin-bottom: 2em; }
+  .topBar .brand {
+    padding-top: 0.75em;
+    padding-left: 0.75em;
+    color: #fff;
+    font-size: 1.25em; }
+    .topBar .brand > i {
+      font-size: 1.5em;
+      margin: 0 1em; }
+  .topBar .breadcrumbs {
+    position: absolute;
+    right: 1.25em;
+    top: 1.25em;
+    list-style: none;
+    list-style-type: none;
+    color: #fff;
+    /* Breadcrumbs Styling */ }
+    .topBar .breadcrumbs li {
+      display: inline; }
+      .topBar .breadcrumbs li a {
+        color: #fff; }
+    .topBar .breadcrumbs li:nth-child(n+1) {
+      margin-left: 0.25em; }
+    .topBar .breadcrumbs li:nth-child(n+1):after {
+      padding-left: 0.5em;
+      content: '>'; }
+    .topBar .breadcrumbs li:first-child {
+      margin-left: auto;
+      padding-left: auto;
+      border-left: 0px solid transparent; }
+    .topBar .breadcrumbs li:last-child:after {
+      content: none; }
